@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'StoragedestLS'"
 		},
+		"BlobCreatedTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/076a6b5c-7b06-43a6-92f6-9d7c628d8cd5/resourceGroups/avanish/providers/Microsoft.Storage/storageAccounts/avanishacc"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -47,6 +51,9 @@
 					},
 					"StoragedestLS_connectionString": {
 						"value": "[parameters('StoragedestLS_connectionString')]"
+					},
+					"BlobCreatedTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('BlobCreatedTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

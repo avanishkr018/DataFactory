@@ -11,6 +11,9 @@
 		"StoragedestLS_connectionString": {
 			"value": ""
 		},
+		"BlobCreatedTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/076a6b5c-7b06-43a6-92f6-9d7c628d8cd5/resourceGroups/avanish/providers/Microsoft.Storage/storageAccounts/avanishacc"
+		},
 		"containerUri": {
 			"value": ""
 		},
