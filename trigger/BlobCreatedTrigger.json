@@ -1,0 +1,24 @@
+{
+	"name": "BlobCreatedTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyblobtoSQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/inputdata/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/076a6b5c-7b06-43a6-92f6-9d7c628d8cd5/resourceGroups/avanish/providers/Microsoft.Storage/storageAccounts/avanishacc",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
